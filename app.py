@@ -56,7 +56,7 @@ def callback():
             continue
 
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turb",
+            model="text-davinci-003",
             prompt=event.message.text,
             max_tokens=256,
             temperature=0.5
